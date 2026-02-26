@@ -14,7 +14,6 @@ Prebuilt [deadnix](https://github.com/astro/deadnix) binaries for unused nix cod
 | Target | Runner |
 |--------|--------|
 | `aarch64-apple-darwin` | macOS 14 (Apple Silicon) |
-| `x86_64-apple-darwin` | macOS 15 Intel |
 | `x86_64-unknown-linux-gnu` | Ubuntu latest |
 | `aarch64-unknown-linux-gnu` | Ubuntu latest (cross) |
 
