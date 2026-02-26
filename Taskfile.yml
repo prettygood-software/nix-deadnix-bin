@@ -1,0 +1,18 @@
+---
+version: '3'
+
+includes:
+  setup:
+    taskfile: ./taskfiles/setup.yml
+  lint:
+    taskfile: ./taskfiles/lint.yml
+  build:
+    taskfile: ./taskfiles/build.yml
+  check-upstream:
+    taskfile: ./taskfiles/check-upstream.yml
+
+tasks:
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
