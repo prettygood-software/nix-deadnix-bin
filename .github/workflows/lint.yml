@@ -1,0 +1,33 @@
+name: Lint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate tool.json
+        run: |
+          jq empty tool.json
+          for field in name crate upstream description; do
+            value=$(jq -r ".${field}" tool.json)
+            if [ "$value" = "null" ] || [ -z "$value" ]; then
+              echo "ERROR: Missing required field '${field}' in tool.json"
+              exit 1
+            fi
+          done
+          echo "tool.json is valid"
+
+      - name: Check workflow files
+        run: |
+          for f in .github/workflows/*.yml; do
+            echo "Checking $f..."
+            # Basic YAML syntax check
+            python3 -c "import yaml; yaml.safe_load(open('$f'))"
+          done
+          echo "All workflow files are valid YAML"

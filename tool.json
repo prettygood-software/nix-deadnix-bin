@@ -1,0 +1,6 @@
+{
+  "name": "example-tool",
+  "crate": "example-tool",
+  "upstream": "https://github.com/owner/example-tool",
+  "description": "Example nix tool"
+}
