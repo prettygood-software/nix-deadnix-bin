@@ -1,6 +1,6 @@
 {
-  "name": "example-tool",
-  "crate": "example-tool",
-  "upstream": "https://github.com/owner/example-tool",
-  "description": "Example nix tool"
+  "name": "deadnix",
+  "crate": "deadnix",
+  "upstream": "https://github.com/astro/deadnix",
+  "description": "Scan nix files for dead code"
 }
