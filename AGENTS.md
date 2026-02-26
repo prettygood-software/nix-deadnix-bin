@@ -66,7 +66,6 @@ All workflows use `jdx/mise-action@v3` for tool installation and delegate logic 
 | Target | Runner | Architecture |
 |--------|--------|-------------|
 | `aarch64-apple-darwin` | `macos-14` | macOS arm64 |
-| `x86_64-apple-darwin` | `macos-15-intel` | macOS x86_64 |
 | `x86_64-unknown-linux-gnu` | `ubuntu-latest` | Linux x86_64 |
 | `aarch64-unknown-linux-gnu` | `ubuntu-latest` (cross) | Linux arm64 |
 

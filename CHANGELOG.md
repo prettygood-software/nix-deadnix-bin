@@ -13,8 +13,6 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - Taskfile with `setup`, `lint`, `build:*`, and `check-upstream` tasks
 - lefthook git hooks: file hygiene, YAML linting, commitlint
 - CLAUDE.md and AGENTS.md project documentation
-- x86_64-apple-darwin build target (macOS 15 Intel)
-
 ### Changed
 
 - Workflows now use `jdx/mise-action@v3` + `task` as thin orchestration wrappers
