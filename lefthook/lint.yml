@@ -3,15 +3,15 @@ pre-commit:
   commands:
     actionlint:
       glob: ".github/workflows/*.{yaml,yml}"
-      run: actionlint -color -oneline {staged_files}
+      run: task lint:actionlint
       fail_text: "actionlint found issues"
 
     yamllint:
       glob: "**/*.{yaml,yml}"
-      run: yamllint --strict {staged_files}
+      run: task lint:yamllint
       fail_text: "yamllint found issues"
 
     tool-json:
       glob: "tool.json"
-      run: jq empty tool.json
+      run: task lint:tool-json
       fail_text: "invalid tool.json"

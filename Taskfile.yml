@@ -10,6 +10,8 @@ includes:
     taskfile: ./taskfiles/build.yml
   check-upstream:
     taskfile: ./taskfiles/check-upstream.yml
+  hooks:
+    taskfile: ./taskfiles/hooks.yml
 
 tasks:
   default:
