@@ -1,4 +1,5 @@
 [tools]
+cocogitto = "6"
 task = "3"
 actionlint = "latest"
 yamllint = "latest"
