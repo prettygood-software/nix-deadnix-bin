@@ -6,7 +6,7 @@ Prebuilt [deadnix](https://github.com/astro/deadnix) binaries for unused nix cod
 
 ```toml
 [tools]
-"github:OlechowskiMichal/nix-deadnix-bin" = "latest"
+"github:prettygood-software/nix-deadnix-bin" = "latest"
 ```
 
 ## Platforms
